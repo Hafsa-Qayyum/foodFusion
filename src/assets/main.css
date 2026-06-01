@@ -1,9 +1,18 @@
 @import './base.css';
 
+/* 1. Reset the body to remove default browser margins */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden; /* Prevents horizontal scrollbars */
+}
+
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* 2. Force the app to take the full width and remove auto margins */
+  width: 100%;
+  margin: 0;
+  padding: 0;
   font-weight: normal;
 }
 
@@ -30,6 +39,6 @@ a,
   #app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    /* width: 100% inherited from above ensures it still spans the whole screen */
   }
 }
