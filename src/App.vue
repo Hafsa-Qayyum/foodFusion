@@ -1,7 +1,7 @@
 <!-- App.vue -->
 <template>
 
-    <Home />
+  <Home />
 
 </template>
 
